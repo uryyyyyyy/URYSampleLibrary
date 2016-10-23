@@ -7,6 +7,7 @@
 //
 
 #import "URYViewController.h"
+#import <URYSampleLibrary/URYSampleLibrary.h>
 
 @interface URYViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    [URYSampleLibrary myLog:@"helllllo"];
+    
+    URYSampleLibrary *obj1 = [[URYSampleLibrary alloc] init];
+    obj1.width = 6;
+    obj1.height = 4;
+    
+    NSLog(@"width: %d, height: %d", obj1.width, obj1.height);
 }
 
 - (void)didReceiveMemoryWarning
