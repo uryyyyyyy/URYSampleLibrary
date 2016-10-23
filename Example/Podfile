@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'URYSampleLibrary_Example' do
+  pod 'URYSampleLibrary', :path => '../'
+
+  target 'URYSampleLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
